@@ -1,0 +1,587 @@
+/* Import des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+/* Déclaration de la police "Made Gentle" */
+@font-face {
+   font-family: 'Made Gentle';
+   src: url('path_to_made_gentle_font.ttf') format('truetype');
+}
+
+/* Déclaration de la police "Superior" */
+@font-face {
+   font-family: 'Superior';
+   src: url('LTSuperior-Regular.otf') format('opentype');
+}
+
+@font-face {
+   font-family: 'Lato';
+   src: url("https://fontmeme.com/polices/police-lato") format('opentype');
+}
+
+
+
+
+/* Corps de la page */
+body {
+   background-color: #e9e8e9; 
+   font-family: 'Comfortaa', sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+
+
+/* Liens généraux */
+a { 
+   text-decoration: none;
+   color: #000;
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+}
+
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+/* En-tête */
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 8%;
+   padding: 20px 0;
+   border-bottom: 1px solid #000;
+}
+
+/* Menu */
+.header_menu {
+   display: flex;
+   list-style: none;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+}
+
+/* Liens du menu */
+.header_menu a {
+   text-decoration: none;
+   color:#F5C348;
+   font-weight: bold;
+   font-size: 16px;
+   font-family: made gentle;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   transition: text-decoration 0.3s ease;
+   font-family: 'Comfortaa', sans-serif; 
+}
+
+/*  Souligner en orange */
+.header_menu a:hover {
+   text-decoration: underline;
+   text-decoration-color: #F5C348;
+   text-decoration-thickness: 3px;
+}
+
+/* logo*/
+.header.logo{
+   color:#F5C348;
+   font-weight: bold;
+   font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* page accueil */
+
+.bloc {
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.bloc video{
+   min-height: 100%;
+   min-width: 100%;
+   position:relative;
+   top: 42%;
+   left: 50%;
+   z-index:-1; ;
+   transform: translate(-50%, -50%);
+}
+
+
+#bloc2 h1 {
+   position: relative;
+   font-size: 4.5rem;
+   color:white; 
+   margin-top: -30%;
+   text-align: center;
+   font-weight: bold; 
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+   
+}
+
+#bloc2 h2 {
+   font-size: 3.5rem;
+   color:#000; 
+   font-family: superior;
+   margin-top: 40%;
+   text-align: left;
+   margin-left: 5%;
+
+}
+
+#bloc2 span {
+   color: #F5C348;
+
+}
+   
+#bloc2 p {
+   font-size: 1.5rem;
+   line-height: 1.8;
+   margin-left: 5%;
+   width: 50%; 
+   border-radius: 2%;
+   line-height: 1.6; 
+   color: #333; 
+   text-align: justify;
+}
+
+
+img {
+   margin-left: 70%;
+   margin-top: -20%;
+   max-width: 20%;  
+}
+
+
+#aside {
+   font-size: 2.5rem;
+   line-height: 1.8;
+   text-align: center;
+   margin-top: 10%;
+   color: #ffffff;
+   background-color: #000;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 2%;
+}
+
+#aside span {
+   color: #F5C348;
+}
+
+
+.video {
+   position: relative;
+   width: 100%; 
+   padding-bottom: 56.25%; 
+   overflow: hidden;
+}
+
+.video iframe {
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   width: 80%;
+   height: 60%;
+   object-fit: cover; 
+   border: none; 
+   justify-content: center;
+}
+
+
+.bloc3 {
+   background-color: #000;
+   width: 50%;
+   margin-left: 25%;
+   margin-right: 10%;
+   display: flex;
+   justify-content: center;
+   gap: 20px; 
+   padding: 20px;
+   flex-wrap: wrap; 
+}
+
+.offre {
+   background-color: #fff; 
+   border: 1px solid #ddd; 
+   border-radius: 8px; 
+   padding: 20px;
+   width: 300px; 
+   text-align: center; 
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offre:hover {
+   transform: translateY(-5px); 
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.offre h3 {
+   font-size: 1.5rem;
+   margin-bottom: 10px;
+   color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* page informations  */
+
+
+.container {
+   margin-top: 10%;
+   display: flex;
+   flex-direction: column; 
+   align-items: center; 
+   gap: 90px;
+}
+
+#bloc4, #bloc5 {
+   background-color: white;
+   border-radius: 8px;
+   padding: 30px;
+   width: 60%;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#bloc4 h3, #bloc5 h4 {
+   text-align: center;
+   letter-spacing: 1px;
+   font-size: 2.5rem;
+   color: #F5C348;
+   font-family: 'made gentle', sans-serif;
+   margin-bottom: 20px;
+}
+
+#bloc4 p, #bloc5 p {
+   font-size: 1.5rem;
+   font-family: 'Comfortaa', sans-serif;
+   color: #000;
+   margin: 20px auto;
+   line-height: 1.8;
+}
+#bloc4 .p2 {
+   font-family: 'Times New Roman', Times, serif;
+}
+
+#libre {
+
+   position: absolute;
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   text-align: center;
+   color: white;
+   font-size: 3rem; 
+   font-weight: bold; 
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+#libre p {
+   margin: 40px 0; 
+}
+
+
+#motiv {
+   position:relative;
+   margin-top: 5%; 
+   left: 50%; 
+   transform: translate(-50%, -50%); 
+   text-align: center;
+   color:#F5C348;
+   font-size: 3rem; 
+   font-weight: bold; 
+}
+
+.images {
+   margin-top: 5%;
+   display: flex;
+   width: 100%; 
+}
+
+.images img {
+   width: 100%; 
+   height: auto; 
+   padding: 0; 
+   margin: 0; 
+}
+
+
+
+
+#bloc6 h5 {
+   font-size: 5.5rem;
+   color:green; 
+   font-family: superior;
+   margin-top: 15%;
+   text-align: center;
+
+}
+
+#bloc6 p {
+   font-size: 1.5rem;
+   margin-top: 5%;
+   line-height: 1.8;
+   margin-left: 5%;
+   width: 50%; 
+   border-radius: 2%;
+   line-height: 1.6; 
+   color: #333; 
+   text-align: justify;
+}
+
+
+.action .inter {
+   display: flex;
+   gap: 10px; 
+   width: 60%; 
+   margin-left: 67%;
+   margin-top: -25%;
+}
+
+.action img {
+   width: 80%; 
+   height: auto; 
+   padding: 0; 
+   margin: 0; 
+}
+
+
+
+
+
+
+#bloc7 ul {
+   background-color: #000;
+   list-style-type: disc;
+   padding: 3%; 
+   margin: 0; 
+   margin-top: 20%;
+}
+
+
+#bloc7 ul li {
+   margin-bottom: 2px; 
+   font-family: comfortaa, sans-serif; 
+   font-size: 1.5rem; 
+   color:#FFC947; 
+   text-align: center;
+   margin-top: 15%;
+   gap: 3%;
+   
+}
+ 
+ 
+#bloc7 ul li {
+   width: 30%; 
+   margin-left: 50%;
+}
+
+#bloc7 ul li + li {
+   margin-top: 10px; 
+}
+
+
+
+
+.bloc8 {
+   display: flex;
+   padding: 10px; 
+   margin-left: 5%;
+   margin-top: -25%;
+}
+
+.bloc8 video {
+   width: 40%; 
+   height: auto; 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+ 
+
+
+
+.info-table {
+   width: 70%;
+   border-collapse: collapse;
+   margin-top:  20%;
+   margin-left: 15%;
+   font-size: 20px;
+   text-align: left;
+   justify-content: center; 
+ }
+ 
+ .info-table thead {
+   background-color: #f4f4f4;
+ }
+ 
+ .info-table th, .info-table td {
+   border: 1px solid #ddd;
+   padding: 10px;
+ 
+ }
+ 
+ .info-table tr:nth-child(even) {
+   background-color: #f9f9f9;
+ }
+ 
+ 
+ .info-table th {
+   font-weight: bold;
+   text-transform: uppercase;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* webographie */
+
+.content-section {
+   margin: 90px auto; 
+   max-width: 800px;
+   padding: 20px; 
+   font-family: comfortaa;
+   line-height: 1.6;
+   color: #333;
+   background-color: #f9f9f9; 
+   border-radius: 5px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+   color: #444;
+   border-bottom: 2px solid #e0e0e0;
+   padding-bottom: 5px;
+}
+
+
+.credits-list, .webography-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+
+.credits-list li, .webography-list li {
+   margin: 15px 0; 
+   padding-left: 20px;
+}
+
+.credits-list a, .webography-list a {
+   text-decoration: none;
+   color: #007BFF;
+   font-weight: bold;
+}
+
+.credits-list a:hover, .webography-list a:hover {
+   text-decoration: underline;
+   color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+.footer {
+   background-color:black;
+   color: #ffffff;
+   text-align: center;
+   padding: 20px 10px;
+   font-family: 'comfortaa', sans-serif;
+   margin-top: 20%;
+}
+  
+.footer-content {
+   margin-bottom: 10px;
+}
+  
+.footer-title {
+   font-size: 1.5rem;
+   font-weight: bold;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+   color: #F5C348;
+}
+  
+.footer-link {
+   color: #F5C348;
+   text-decoration: none;
+   font-weight: bold;
+}
+  
+.footer-link:hover {
+   text-decoration: underline;
+}
+  
+.footer-bottom {
+   border-top:1px solid #444;
+   padding-top: 10px;
+   font-size: 0.9rem;
+   color: #aaaaaa;
+}
+
